@@ -1,5 +1,14 @@
-const CLI = require('./lib/questions.js');
+const inquirer = require('inquirer');
+const questions = require('./lib/questions.js');
 
-const cli = new CLI();
-
-cli.run();
+function init() {
+    return inquirer
+        .prompt(questions)
+}
+    
+init() 
+//     .then((answers) => {
+//     })
+//      .catch((err) => {
+//           err ? console.error(err) : console.log('Success!')
+//      })
