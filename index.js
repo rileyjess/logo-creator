@@ -1,6 +1,6 @@
+// Import inquirer and the questions
 const inquirer = require('inquirer');
 const questions = require('./lib/questions.js');
-// const writeToFile = require('./lib/writeToFile.js');
 
 // Use the file system to write files
 const fs = require('fs');
@@ -18,11 +18,13 @@ function writeToFile(answers) {
         err ? console.log(err) : console.log('Generated logo.svg'))
 }
 
+// Function to run inquirer so that users are prompted with questions in the console
 function init() {
     return inquirer
         .prompt(questions)
 }
-    
+
+// Call the function so the questions appear, then pass the responses through the writeToFile function to create a new SVG
 init() 
     .then((answers) => {
         console.log(answers);
