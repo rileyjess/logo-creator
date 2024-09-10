@@ -13,7 +13,7 @@ An application that can generate an SVG logo based on user input for the logo's 
 * [Tests](#tests)
 
 ## Walkthrough Video
-
+For a demonstration of how the app works, click [here](https://youtu.be/cCGTKmr-g-w).
 
 ## Installation
 Packages used:
